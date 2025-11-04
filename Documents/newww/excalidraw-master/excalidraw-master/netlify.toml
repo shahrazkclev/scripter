@@ -1,5 +1,5 @@
 [build]
-  command = "yarn build"
+  command = "yarn install && yarn build:packages && yarn --cwd excalidraw-app build:app:netlify && yarn --cwd excalidraw-app build:version"
   publish = "excalidraw-app/build"
 
 [build.environment]
